@@ -1,0 +1,25 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "A Simple Chat App",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kemifasae/Chat-App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kemifasae/Chat-App/issues"
+  },
+  "homepage": "https://github.com/kemifasae/Chat-App#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "nodemon": "^1.14.11",
+    "pug": "^2.0.0-rc.4",
+    "socket.io": "^2.0.4"
+  }
+}
