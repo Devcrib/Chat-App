@@ -12,6 +12,11 @@ app.use(express.static(__dirname + '/public'));
 
 var io = require('socket.io').listen(app.listen(port));
 
+// Set our transports
+
+  io.set("transports", ["xhr-polling"]);
+  io.set("polling duration", 20);
+
 io.sockets.on('connection', function (socket) {
   socket.on('chat message', function(msg){
     io.emit('chat message', msg);
