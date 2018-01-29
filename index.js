@@ -22,4 +22,4 @@ io.sockets.on('connection', function (socket) {
     io.emit('chat message', msg);
   });
 });
-console.log("Listening on port " + port);
+
